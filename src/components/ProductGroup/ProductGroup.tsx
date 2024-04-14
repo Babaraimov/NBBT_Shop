@@ -23,7 +23,7 @@ function ProductGroup() {
       <div className="GroupText">
         <h1>Смартфоны</h1>
         <p>
-          Все что нужно знать при выборе{" "}
+          Все что нужно знать при выборе
           <button>
             <span>Смартфона</span> <RxExternalLink />
           </button>
@@ -86,7 +86,7 @@ function ProductGroup() {
           <div className="GroupBoxText">
             <h1>Дополнительные фильтры</h1>
             <button>
-              Все фильтры <SlArrowRight />{" "}
+              Все фильтры <SlArrowRight />
             </button>
           </div>
           <div className="BGBox_mini">
