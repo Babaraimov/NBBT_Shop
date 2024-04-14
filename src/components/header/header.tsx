@@ -15,32 +15,34 @@ function Header() {
       <div className="headers">
         <div className="container">
           <div className="header">
-            <div className="headerTop">
-              <div className="headerRigth">
-                <NavLink className="behoofNav" to="/">
-                  <img className="imgBehoof" src={behoof} alt="" />
-                  <h1 className="behoof">Behoof</h1>
+            <div className="headerTopFixed">
+              <div className="headerTop">
+                <div className="headerRigth">
+                  <NavLink className="behoofNav" to="/">
+                    <img className="imgBehoof" src={behoof} alt="" />
+                    <h1 className="behoof">Behoof</h1>
+                  </NavLink>
+                  <h5 className="miniInfo">
+                    Лучшие цены <br /> в интернет-магазине
+                  </h5>
+                </div>
+                <div className="headerCenter">
+                  <form className="btnInpForm" action="">
+                    <DropDown defaultValue="Каталог товаров" />
+                    <img className="imgSeacrh" src={search} alt="" />
+                    <input
+                      className="inpSearch"
+                      type="text"
+                      placeholder="Поиск товаров"
+                    />
+                  </form>
+                </div>
+                <NavLink className="navBottom" to="/">
+                  <img className="hrtFrmCart" src={heart} alt="" />
+                  <img className="hrtFrmCart" src={chart} alt="" />
+                  <img className="hrtFrmCart" src={frame} alt="" />
                 </NavLink>
-                <h5 className="miniInfo">
-                  Лучшие цены <br /> в интернет-магазине
-                </h5>
               </div>
-              <div className="headerCenter">
-                <DropDown defaultValue="Каталог товаров" />
-                <form className="btnInpForm" action="">
-                  <img className="imgSeacrh" src={search} alt="" />
-                  <input
-                    className="inpSearch"
-                    type="text"
-                    placeholder="Поиск товаров"
-                  />
-                </form>
-              </div>
-              <NavLink className="navBottom" to="/">
-                <img className="hrtFrmCart" src={heart} alt="" />
-                <img className="hrtFrmCart" src={chart} alt="" />
-                <img className="hrtFrmCart" src={frame} alt="" />
-              </NavLink>
             </div>
             <div className="headerBottom">
               <div className="headerBottomLeft">
@@ -66,6 +68,7 @@ function Header() {
           </div>
         </div>
       </div>
+      <button className="btnnn"></button>
     </div>
   );
 }

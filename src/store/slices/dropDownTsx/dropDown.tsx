@@ -30,6 +30,7 @@ const DropDown: React.FC<Drop> = ({ defaultValue }) => {
   const btnRef = useRef();
 
   window.addEventListener("click", (e) => {
+    e.preventDefault();
     if (e.target !== menuRef.current && e.target !== btnRef.current) {
       setOpen(false);
     }
@@ -47,11 +48,7 @@ const DropDown: React.FC<Drop> = ({ defaultValue }) => {
           {isOpen ? (
             <img className="imgArrowTop" src={arrowTop} alt="" />
           ) : (
-            <img
-              src={arrow}
-              className={`imgArrowBottom ${isOpen ? "active" : ""}`}
-              alt=""
-            />
+            <img src={arrow} className="imgArrowBottom" alt="" />
           )}
         </button>
         {isOpen && (
