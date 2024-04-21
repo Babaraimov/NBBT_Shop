@@ -56,19 +56,18 @@ function Product() {
               </div>
             </div>
             <div className="hero__info">
-              {/* <div className="info">
-                dizain{" "}
-                <button onClick={}>
-                  <img src={img9} alt="" />
-                </button>
-              </div> */}
-              {/* <div className="info">
-                dizain{" "}
-                <button onClick={}>
-                  <img src={img9} alt="" />
-                </button>
-              </div> */}
-              <button>kamera</button>
+              <div className="info">
+                Дизайн
+                <button className="info-delete">X</button>
+              </div>
+
+              <div className="info">
+                Портативность
+                <button className="info-delete">X</button>
+              </div>
+              <div className="info2">Камера</div>
+              <div className="info2">Ответ</div>
+              <div className="info2">Батарея</div>
             </div>
             <div className="hero__products">
               <div className="hero__product">

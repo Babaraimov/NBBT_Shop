@@ -99,7 +99,9 @@ function Information() {
               <div className="Charts">
                 <div className="product__iphone">
                   <div className="iphone__group">
-                    <h1>Apple iPhone 13 Pro Max 256 ГБ серый</h1>
+                    <h1 className="iphone__group-title">
+                      Apple iPhone 13 Pro Max 256 ГБ серый
+                    </h1>
                     <div className="grade-block">
                       <p className="grade">4.4. Оценка экспертов</p>
                       <p className="star">
@@ -168,8 +170,8 @@ function Information() {
                     <p>Доставка бесплатная</p>
 
                     <div className="hgfds">
-                      <img src={img5} alt="" />
-                      <div className="statik-img"></div>{" "}
+                      <img className="statik-img" src={img5} alt="" />
+
                       <div className="statik">
                         Цена хорошая
                         <br />
@@ -179,9 +181,9 @@ function Information() {
                         </span>
                       </div>
                     </div>
-                    <img src={img6} alt="" />
+                    <img className="color" src={img6} alt="" />
                     <img className="color" src={img7} alt="" />
-                    <img src={img8} alt="" />
+                    <img className="color" src={img8} alt="" />
                     <div className="btns">
                       <button className="btn-left">
                         <img src={img9} alt="" /> Сравнить
@@ -192,7 +194,7 @@ function Information() {
                     </div>
                     <div className="history-group">
                       <h4>История цены</h4>
-                      <img src={img11} alt="" />
+                      <img className="mount" src={img11} alt="" />
                       <img className="price" src={img12} alt="" />
                       <div className="history-mounth">
                         <div className="mounth">Сентябрь</div>
@@ -204,6 +206,7 @@ function Information() {
                       </div>
                     </div>
                     <div className="chart-blocks">
+                      {/* <div className="chart-groups"> */}
                       <div className="chart-block">
                         <div className="chart-block-header">
                           <p className="money-group-text">83 999 ₽</p>
@@ -325,6 +328,7 @@ function Information() {
                           </button>
                         </div>
                       </div>
+                      {/* </div> */}
                     </div>
                   </div>
                 </div>

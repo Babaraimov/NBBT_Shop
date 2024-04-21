@@ -1,5 +1,13 @@
+import Information from "../../components/informationProduct/information";
+// import Product from "../../components/section/hero";
+
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      {/* <Product /> */}
+      <Information />
+    </div>
+  );
 }
 
 export default Home;
