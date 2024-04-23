@@ -1,0 +1,443 @@
+#containerGroup {
+  max-width: 1240px;
+  margin: 0 auto;
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: column;
+}
+.GroupBox2 {
+  list-style-type: none;
+  margin: 6px 15px;
+}
+.GroupText {
+  display: flex;
+  justify-content: space-between;
+}
+.GroupText h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+.GroupText p {
+  width: 440px;
+  height: 55px;
+  border-radius: 8px;
+  background: #f6f7fa;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.GroupText button {
+  color: #ff4d4d;
+  background: #f6f7fa;
+  border: none;
+  font-size: 18px;
+}
+.bigGroup {
+  display: flex;
+  gap: 20px;
+}
+/* BOX */
+.BGBox_1 {
+  width: 850px;
+  height: 320px;
+  border-radius: 14px;
+  background: #fdfdfd;
+  border: 2px solid #f2f5f9;
+  display: flex;
+  flex-direction: column;
+}
+.BGBox_2 {
+  width: 850px;
+  height: 320px;
+  border-radius: 14px;
+  background: #fdfdfd;
+  border: 2px solid #f2f5f9;
+  display: flex;
+  flex-direction: column;
+}
+.BGBox_1 h1 {
+  font-size: 25px;
+
+  margin-left: 20px;
+}
+.BGBox_2 h1 {
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.BGBox_mini {
+  display: flex;
+}
+.GroupBox1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.GroupBox1 b {
+  font-size: 17px;
+}
+.GroupBox1_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.GroupBox1_button button {
+  border: none;
+  width: 100px;
+  height: 40px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #f2f5f9;
+  margin-left: 15px;
+}
+.GroupBox1li1 {
+  list-style-type: none;
+  position: relative;
+  margin-left: -10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.GroupBox3 button {
+  border: none;
+  background-color: white;
+  color: #ff4d4d;
+  font-size: 30px;
+}
+.GroupBox3 {
+  /* margin:-50px 30px; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+.GroupBox1li2 {
+  list-style-type: none;
+  position: relative;
+  margin-left: -10px;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.GroupBox1 b {
+  margin-left: 20px;
+}
+.GroupBox1li2::before {
+  content: "";
+  margin-left: -15px;
+  position: absolute;
+  left: 0;
+  top: 51%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("./images/cruck.png") center center no-repeat;
+}
+.GroupBox1li1::before {
+  content: "";
+  margin-left: -15px;
+  position: absolute;
+  left: 0;
+  top: 51%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("./images/RadioImg.png") center center no-repeat;
+}
+.GroupBox2 {
+  margin-left: 30px;
+}
+.GroupBox2 b {
+  margin-left: 42px;
+}
+.GroupBox2Li12 {
+  margin-top: 5px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.GroupBox2Li1 {
+  margin-top: 5px;
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.GroupBox2Li1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("./images/Checkbox.png") center center no-repeat;
+}
+.GroupBox2Li12::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("./images/cruck.png") center center no-repeat;
+}
+/*  */
+.GroupBoxText {
+  display: flex;
+  justify-content: space-between;
+}
+.GroupBoxText button {
+  border: none;
+  background-color: white;
+  color: #ff4d4d;
+}
+.Dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.Dropdown select {
+  width: 200px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid #f2f5f9;
+  background: #fdfdfd;
+}
+.Dropdown select option {
+  background-color: #ffeeee;
+  color: #ff4d4d;
+}
+.Dropdown select option:hover {
+  background-color: #ffeeee;
+  color: #ff4d4d;
+}
+
+/*  */
+.phoneContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.phoneBox {
+  display: flex;
+  gap: 10px;
+  /* margin:  0 auto;   */
+  width: 1370px;
+  height: 400px;
+  margin-top: 20px;
+  padding-top: 30px;
+  border-radius: 12px;
+  border: 1px solid #f2f5f9;
+  margin-left: -30px;
+}
+.imgPhone {
+  /* width: 300px; */
+  height: 300px;
+  /* margin-top: 30px; */
+}
+.phoneBox img {
+  margin: 0px 5px;
+}
+.phonemini {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.phoneminiB {
+  display: flex;
+  justify-content: space-between;
+  gap: 160px;
+}
+.phoneminiB-img {
+  margin-left: 10px;
+}
+
+.phoneminiB-button {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 240px;
+  height: 48px;
+  border-radius: 10px;
+  background: #f6f7fa;
+  border: none;
+  color: #30d170;
+  font-size: 17px;
+}
+.phoneminiB-button2 {
+  width: 240px;
+  height: 48px;
+  border-radius: 10px;
+  background: #f6f7fa;
+  border: none;
+  color: #7e8794;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.phoneminiB-button2 img {
+  width: 96px;
+}
+.phoneminiText {
+  display: flex;
+  justify-content: space-between;
+}
+.phoneminiText button {
+  border: none;
+  background-color: white;
+  color: #30d170;
+  font-size: 16px;
+}
+.phoneminiText button span {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 38px;
+}
+.phoneUl {
+  display: flex;
+  gap: 50px;
+}
+
+.phoneUlli {
+  list-style-type: none;
+  position: relative;
+  margin-left: -40px;
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-top: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.phoneUlli:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("./images/add.png") center center no-repeat;
+}
+.phoneUl {
+  list-style-type: none;
+  position: relative;
+  margin-left: -40px;
+  margin-top: 15px;
+  padding-left: 25px;
+  padding-top: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.phoneUl:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 60%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("./images/Check.png") center center no-repeat;
+}
+.phoneContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  */
+.hero__product {
+  border-radius: 0px 12px 12px 0px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 300px;
+  margin-left: 10px;
+  /* margin-top: 10px; */
+}
+
+.div1 {
+  border-radius: 4px;
+  width: 77px;
+  height: 7px;
+  background: #ff4d4d;
+  margin: 5px 5px 0 0;
+}
+.div2 {
+  background-color: #eceeef;
+  border-radius: 4px;
+  width: 77px;
+  height: 7px;
+  margin: 5px 5px 0 0;
+}
+
+.linia {
+  display: flex;
+}
+
+.iphone-text {
+  line-height: 129%;
+  color: #7e8794;
+}
+/*  */
+.phoneFooterContainer {
+  width: 100%;
+  display: flex;
+}
+
+.phoneFooter {
+  /* display: flex; */
+  /* align-items: center; */
+  margin: 30px;
+}
+
+.phoneFooterDiv {
+  display: flex;
+  align-items: center;
+  margin-left: 18%;
+}
+.phoneFooter p {
+  font-size: 12px;
+  color: #7e8794;
+}
+.phoneFooterDiv button {
+  border: none;
+  color: #7e8794;
+  font-size: 14px;
+  background-color: #ffffff;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.phoneFooterDiv button:hover {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border-radius: 6px;
+}
+.phoneFooterDiv a {
+  text-decoration: none;
+  color: #ff4d4d;
+  font-weight: 600;
+}
