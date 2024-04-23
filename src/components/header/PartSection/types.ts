@@ -6,4 +6,3 @@ export interface Product {
   productName: string;
   productDetails: string;
 }
-

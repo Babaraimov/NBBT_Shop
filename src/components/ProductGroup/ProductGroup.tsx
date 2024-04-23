@@ -4,6 +4,8 @@ import { RxExternalLink } from "react-icons/rx";
 import Phone from "./Phone";
 import { RxSwitch } from "react-icons/rx";
 import { SlArrowRight } from "react-icons/sl";
+import imgProduct3 from "./images/arrow-3.png";
+import { HiAdjustments } from "react-icons/hi";
 
 function ProductGroup() {
   const [selectedOption, setSelectedOption] = useState("");
@@ -17,17 +19,29 @@ function ProductGroup() {
   return (
     <div id="containerGroup">
       <div className="textGroup">
-        <a style={{ color: "gray" }}>Главная</a>
-        <span style={{ color: "black" }}> / Смартфоны</span>
+        <a style={{ color: "gray" }}>Главная /</a>
+        <span style={{ color: "black" }}> Смартфоны</span>
       </div>
       <div className="GroupText">
         <h1>Смартфоны</h1>
         <p>
-          Все что нужно знать при выборе{" "}
+          Все что нужно знать при выборе
           <button>
             <span>Смартфона</span> <RxExternalLink />
           </button>
         </p>
+      </div>
+      <div className="adaptationBox">
+        <img src={imgProduct3} alt="" />
+        <button>Сортировка</button>
+        <div className="adaptationDiv"></div>
+        <button>
+          {/* {" "} */}
+          <HiAdjustments
+            style={{ fontSize: "30px", marginLeft: "10px", marginTop: "10px" }}
+          />
+        </button>
+        <button>Фильтры</button>
       </div>
       <div className="bigGroup">
         <div className="BGBox_1">
@@ -86,7 +100,7 @@ function ProductGroup() {
           <div className="GroupBoxText">
             <h1>Дополнительные фильтры</h1>
             <button>
-              Все фильтры <SlArrowRight />{" "}
+              Все фильтры <SlArrowRight />
             </button>
           </div>
           <div className="BGBox_mini">

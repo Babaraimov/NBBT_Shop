@@ -65,6 +65,7 @@
 /* new */
 .new-container {
   padding-top: 110px;
+  max-width: 100%;
 }
 .newText {
   margin: 30px 0px;
@@ -86,20 +87,20 @@
   gap: 20px;
   margin-left: -30px;
 }
-.NewBox {
+.NewBox1 {
   width: 256px;
   height: 370px;
   text-align: left;
   background-color: #f6f7fa;
   border-radius: 12px;
 }
-.NewBox p,
-.NewBox b {
+.NewBox1 p,
+.NewBox1 b {
   color: #7e8794;
   font-size: 16px;
   margin-left: 10px;
 }
-.NewBox button {
+.NewBox1 button {
   color: #30d170;
   background-color: #f6f7fa;
   border: none;
@@ -113,7 +114,7 @@
   margin: 0 auto;
   margin-top: 15px;
 }
-.NewBox h4 {
+.NewBox1 h4 {
   margin-left: 10px;
   line-height: 28px;
   font-size: 21px;
@@ -124,4 +125,96 @@
 }
 .miniboximg {
   margin: 10px 10px;
+}
+
+@media screen and (max-width: 700px) {
+  #containetSection {
+    width: 100%;
+    height: 645px;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: #f2f5f9;
+  }
+  #sectionPart_box {
+    flex-direction: column;
+  }
+  .SectionPart {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: -80px;
+  }
+  .SectionPart h1 {
+    font-size: 35px;
+  }
+  .SectionPart span {
+    font-size: 36px;
+  }
+  .boxmini img {
+    margin: 10px 0px;
+    width: 200px;
+    height: 60px;
+  }
+  .SectionPart-img1 {
+    width: 300px;
+    height: 310px;
+    top: 78px;
+    left: 160px;
+  }
+  .SectionPart-img2 {
+    width: 310px;
+    height: 366px;
+    top: -18.2pc;
+    left: 10px;
+    z-index: 1;
+  }
+  .sectionPart h2 {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #containetSection {
+    width: 470px;
+    height: 610px;
+    margin: 0 auto;
+    flex-direction: column;
+    background-color: #f2f5f9;
+  }
+
+  .SectionPart {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: -90px;
+  }
+
+  .boxmini img {
+    margin: 10px 0px;
+    width: 170px;
+    height: 50px;
+  }
+
+  .newText {
+    margin-top: 40px;
+  }
+}
+.new-container-swiper {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .swiper-slide {
+    display: block;
+    max-width: 250px;
+  }
+
+  .new-container-swiper {
+    display: block;
+  }
+  .new-container {
+    display: none;
+  }
 }

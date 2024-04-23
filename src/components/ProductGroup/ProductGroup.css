@@ -247,9 +247,7 @@
   margin-left: -30px;
 }
 .imgPhone {
-  /* width: 300px; */
   height: 300px;
-  /* margin-top: 30px; */
 }
 .phoneBox img {
   margin: 0px 5px;
@@ -269,9 +267,6 @@
 }
 
 .phoneminiB-button {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   width: 240px;
   height: 48px;
   border-radius: 10px;
@@ -374,7 +369,6 @@
   width: 250px;
   height: 300px;
   margin-left: 10px;
-  /* margin-top: 10px; */
 }
 
 .div1 {
@@ -407,8 +401,6 @@
 }
 
 .phoneFooter {
-  /* display: flex; */
-  /* align-items: center; */
   margin: 30px;
 }
 
@@ -440,4 +432,180 @@
   text-decoration: none;
   color: #ff4d4d;
   font-weight: 600;
+}
+
+.adaptationBox {
+  display: none;
+}
+.adaptation-button {
+  display: none;
+}
+.adaptation-button-2 {
+  display: none;
+}
+.adaptationContainer {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .textGroup,
+  .Dropdown,
+  .GroupText p,
+  .bigGroup {
+    display: block;
+  }
+}
+@media screen and (max-width: 700px) {
+  .textGroup,
+  .Dropdown,
+  .GroupText p,
+  .bigGroup {
+    display: none;
+  }
+
+  .adaptationBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #f2f5f9;
+    margin: 10px 0px;
+  }
+
+  .adaptationBox button {
+    border: none;
+    margin: 10px 10px;
+    font-size: 26px;
+    text-align: center;
+    color: #ff4d4d;
+    background-color: #f2f5f9;
+  }
+
+  .adaptationDiv {
+    height: 30px;
+    border: 1px solid #eceeef;
+  }
+
+  .adaptationBox img {
+    width: 26px;
+  }
+
+  .phoneFooterContainer,
+  .phoneBox {
+    display: none;
+  }
+  .adaptationContainer {
+    margin-top: 20px;
+    width: 100%;
+    height: 470px;
+    border-radius: 15px;
+    border: 1px solid #f2f5f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .adaptation-button,
+  .adaptation-button-2 {
+    display: flex;
+    width: 230px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: #f6f7fa;
+    border: none;
+    font-size: 19px;
+    margin-left: 20px;
+  }
+
+  .adaptation-button {
+    color: #30d170;
+  }
+
+  .adaptation-button-2 {
+    color: #7e8794;
+  }
+
+  .adaptation-button-2 img {
+    width: 18px;
+  }
+
+  .adaptationButton {
+    display: flex;
+  }
+
+  .phoneminiB-img {
+    width: 130px;
+    margin: 10px 30px;
+  }
+
+  .adaptation_box {
+    display: flex;
+  }
+
+  .adaptation_box_img {
+    width: 130px;
+    height: 140px;
+    padding-top: 43px;
+    margin-left: 14px;
+  }
+
+  .adaptationContainer h2 {
+    font-size: 25px;
+    margin-left: 30px;
+  }
+
+  .adaptationContainer h3 {
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: -10px;
+    display: flex;
+  }
+
+  .adaptationContainer h3 button {
+    border: none;
+    background-color: white;
+    color: #30d170;
+    font-size: 17px;
+    margin-left: 10px;
+    gap: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .adaptationContainer {
+    width: 550px;
+    height: 470px;
+    border-radius: 15px;
+    border: 1px solid #f2f5f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .adaptationBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 530px;
+    height: 48px;
+    border-radius: 10px;
+    background-color: #f2f5f9;
+    margin: 10px 0px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .UlAdaptation li {
+    font-size: 16px;
+  }
+
+  .adaptationContainer h3 {
+    font-size: 18px;
+    margin-left: 30px;
+  }
 }

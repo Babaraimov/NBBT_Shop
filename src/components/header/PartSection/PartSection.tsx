@@ -1,4 +1,3 @@
-// import React from "react";
 import img1 from "./images/Store=Google Play, Color=Black, Language=Russian.png";
 import img2 from "./images/Store=App Store, Color=Black, Language=Russian (2).png";
 import img3 from "./images/iPhone 14 Pro Space Black Mockup (1).png";
@@ -38,10 +37,10 @@ const PartSection = () => {
               <img src={img2} alt="" />
             </div>
           </div>
-          <div className="swiper-container">
-            <div className="swiper-wrapper">
+          <div>
+            <div>
               {[1, 2].map((_, index) => (
-                <div className="swiper-slide" key={index}>
+                <div>
                   <img
                     className={`SectionPart-img${index + 1}`}
                     src={img3}
@@ -50,7 +49,6 @@ const PartSection = () => {
                 </div>
               ))}
             </div>
-            <div className="swiper-pagination"></div>
           </div>
         </div>
       </section>
