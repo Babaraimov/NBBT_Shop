@@ -19,7 +19,18 @@ import img16 from "../../assets/information/svg/Chart2.svg";
 import img17 from "../../assets/information/svg/next.svg";
 import img18 from "../../assets/information/svg/Invisible.svg";
 import img19 from "../../assets/information/svg/star-otzyv.svg";
+import ChartComponent from "./swaiperProduct";
+// import { useHistory } from "react-router-dom";
 function Information() {
+  // const history = useHistory();
+  const handleCompareClick = () => {};
+
+  const handleFavoriteClick = () => {};
+
+  // const handleImageClick = () => {
+  //   history.push("/other-page");
+  // };
+
   return (
     <>
       <section className="section">
@@ -29,7 +40,12 @@ function Information() {
               <div className="Products">
                 <div className="product__block">
                   <div className="iphone-block">
-                    <img className="iphone-13" src={img1} alt="" />
+                    <img
+                      className="iphone-13"
+                      src={img1}
+                      alt=""
+                      // onClick={handleImageClick}
+                    />
                     <div className="iphones-block">
                       <img className="iphones" src={img1} alt="" />
                       <img className="iphones" src={img1} alt="" />
@@ -99,7 +115,9 @@ function Information() {
               <div className="Charts">
                 <div className="product__iphone">
                   <div className="iphone__group">
-                    <h1>Apple iPhone 13 Pro Max 256 ГБ серый</h1>
+                    <h1 className="iphone__group-title">
+                      Apple iPhone 13 Pro Max 256 ГБ серый
+                    </h1>
                     <div className="grade-block">
                       <p className="grade">4.4. Оценка экспертов</p>
                       <p className="star">
@@ -168,8 +186,8 @@ function Information() {
                     <p>Доставка бесплатная</p>
 
                     <div className="hgfds">
-                      <img src={img5} alt="" />
-                      <div className="statik-img"></div>{" "}
+                      <img className="statik-img" src={img5} alt="" />
+
                       <div className="statik">
                         Цена хорошая
                         <br />
@@ -179,20 +197,29 @@ function Information() {
                         </span>
                       </div>
                     </div>
-                    <img src={img6} alt="" />
-                    <img className="color" src={img7} alt="" />
-                    <img src={img8} alt="" />
-                    <div className="btns">
-                      <button className="btn-left">
-                        <img src={img9} alt="" /> Сравнить
-                      </button>
-                      <button className="btn-right">
-                        <img src={img10} alt="" /> В избранное
-                      </button>
+                    <div className="color-group">
+                      <img className="color" src={img6} alt="" />
+                      <img className="color" src={img7} alt="" />
+                      <img className="color" src={img8} alt="" />
+                      <div className="btns">
+                        <button
+                          className="btn-left"
+                          onClick={handleCompareClick}
+                        >
+                          <img src={img9} alt="" /> Сравнить
+                        </button>
+                        <button
+                          className="btn-right"
+                          onClick={handleFavoriteClick}
+                        >
+                          <img src={img10} alt="" /> В избранное
+                        </button>
+                      </div>
                     </div>
+
                     <div className="history-group">
                       <h4>История цены</h4>
-                      <img src={img11} alt="" />
+                      <img className="mount" src={img11} alt="" />
                       <img className="price" src={img12} alt="" />
                       <div className="history-mounth">
                         <div className="mounth">Сентябрь</div>
@@ -203,7 +230,11 @@ function Information() {
                         <div className="mounth">Февраль</div>
                       </div>
                     </div>
+                    {/* <div className="swiper">
+                      <ChartComponent />
+                    </div> */}
                     <div className="chart-blocks">
+                      {/* <div className="chart-groups"> */}
                       <div className="chart-block">
                         <div className="chart-block-header">
                           <p className="money-group-text">83 999 ₽</p>
@@ -325,6 +356,7 @@ function Information() {
                           </button>
                         </div>
                       </div>
+                      {/* </div> */}
                     </div>
                   </div>
                 </div>
@@ -501,6 +533,9 @@ function Information() {
             <div className="btn-footer">
               <button className="button-footer">Показать еще</button>
             </div>
+          </div>
+          <div className="swiper">
+            <ChartComponent />
           </div>
         </div>
       </section>

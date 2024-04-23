@@ -48,7 +48,6 @@
   gap: 10px;
 }
 .information-text span {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
@@ -91,6 +90,23 @@
   height: 400px;
   background-color: white;
 }
+.linia {
+  display: flex;
+}
+.div1 {
+  border-radius: 2px;
+  width: 88px;
+  height: 4px;
+  background: #ff4d4d;
+  margin: 5px 5px 0 0;
+}
+.div2 {
+  background-color: #eceeef;
+  border-radius: 2px;
+  width: 88px;
+  height: 4px;
+  margin: 5px 5px 0 0;
+}
 .charecteristic {
   border: 1px solid #f2f5f9;
   border-radius: 12px;
@@ -99,10 +115,17 @@
   background-color: white;
   margin: 20px 0;
 }
+.iphone__group-title {
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 137%;
+  color: #263141;
+  padding: 10px 0;
+}
 .grade-block {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .grade {
   background: #f6f7fa;
@@ -111,7 +134,6 @@
   padding: 14px 16px;
   max-width: 211px;
   /* height: 48px; */
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
@@ -124,14 +146,13 @@
   max-width: 313px;
   /* height: 48px; */
   background: #f6f7fa;
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 125%;
   color: #7e8794;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 10px;
 }
 .crown {
@@ -146,10 +167,9 @@
 .money-group {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .money-group-text {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 24px;
   line-height: 133%;
@@ -165,8 +185,17 @@
   display: flex;
   /* flex-direction: column; */
 }
+.statik-img img {
+  max-width: 100%;
+}
 .color {
   margin: 15px 0;
+  /* max-width: 100%; */
+}
+.color-group {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 100%; */
 }
 .btns {
   display: flex;
@@ -180,7 +209,6 @@
   height: 56px;
   border: 0;
   background: #ff4d4d;
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 137%;
@@ -196,7 +224,6 @@
   max-width: 171px;
   height: 56px;
   background: #fee;
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 137%;
@@ -220,7 +247,7 @@
   bottom: 20px;
   display: flex;
   justify-content: space-between;
-  gap: 58px;
+  /* gap: 58px; */
 }
 .otzyv-groups {
   display: grid;
@@ -251,6 +278,10 @@
   color: #30d170;
   margin: 10px 0;
 }
+.mount img,
+.price {
+  max-width: 100%;
+}
 .chart-footer {
   display: flex;
   justify-content: space-between;
@@ -275,15 +306,17 @@
   gap: 5px;
   padding-left: 15px;
 }
+/* .color-group {
+  display: flex;
+  flex-direction: column;
+} */
 .otzyv-title {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 137%;
   color: #263141;
 }
 .otzyv-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 137%;
@@ -297,7 +330,6 @@
   background: #f6f7fa;
 }
 .button-footer {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
@@ -307,7 +339,6 @@
   padding: 14px;
   max-width: 138px;
   height: 48px;
-
   border: 0;
   cursor: pointer;
 }
@@ -319,7 +350,7 @@
 }
 .avatar {
   border-radius: 1000px;
-  width: 48px;
+  max-width: 48px;
   height: 48px;
 }
 .otzyv__header-title {
@@ -334,6 +365,9 @@
   .iphone-block {
     display: grid;
   }
+  .swiper {
+    display: none;
+  }
   .iphones-block {
     display: none;
   }
@@ -345,13 +379,83 @@
     display: grid;
     grid-template-columns: 1fr;
   }
-}
-@media screen and (max-width: 1000px) {
-  .otzyv-groups {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    /* text-align: center; */
+  .chart-groups {
+    display: flex;
+    overflow: hidden;
   }
+  /* .opisanie {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 1000px) {
+  .wrap-block {
+    flex-direction: column;
+  }
+  .statik-img img {
+    max-width: 100%;
+  }
+  .information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .chart-blocks {
+    display: flex;
+    overflow: hidden;
+  }
+  .iphone-13,
+  .opisanie,
+  .charecteristic,
+  .grade-block,
+  .money-group,
+  .otzyv-groups,
+  /* .chart-blocks, */
+  .otzyv-header {
+    max-width: 100%;
+  }
+  .iphones,
+  .history-group,
+  /* .history-mounth, */
+  .otzyv-group,
+  .chart-block,
+  .statik,
+  .otzyv-header {
+    width: 100%;
+  }
+  .iphone-block,
+  .product__block,
+  .hgfds,
+  /* .color, */
+ 
+  .otzyv-header {
+    justify-content: center;
+    align-items: center;
+  }
+  .information {
+    flex-direction: column;
+    align-items: center;
+  }
+  .information-btn {
+    margin-top: 10px;
+  }
+  .btn-left,
+  .btn-right {
+    max-width: 100%;
+  }
+  .otzyv-groups {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .swiper {
+    display: block;
+  }
+  .color {
+    max-width: 405px;
+  }
+
+  /* .opisanie {
+    display: block;
+  } */
 }

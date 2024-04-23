@@ -1,4 +1,5 @@
 import React from "react";
+
 import img1 from "../../assets/hero.imgs/1.svg";
 import img2 from "../../assets/hero.imgs/2.svg";
 import img3 from "../../assets/hero.imgs/3.svg";
@@ -11,6 +12,8 @@ import "./style.css";
 // import img9 from "../../assets/hero.imgs/delete.svg";
 import img10 from "../../assets/hero.imgs/like.svg";
 import img11 from "../../assets/hero.imgs/static.svg";
+import ProductsList from "./swaiperProduts";
+import SwaiperBlock from "./swaiperBlock";
 function Product() {
   return (
     <>
@@ -56,19 +59,18 @@ function Product() {
               </div>
             </div>
             <div className="hero__info">
-              {/* <div className="info">
-                dizain{" "}
-                <button onClick={}>
-                  <img src={img9} alt="" />
-                </button>
-              </div> */}
-              {/* <div className="info">
-                dizain{" "}
-                <button onClick={}>
-                  <img src={img9} alt="" />
-                </button>
-              </div> */}
-              <button>kamera</button>
+              <div className="info">
+                Дизайн
+                <button className="info-delete">X</button>
+              </div>
+
+              <div className="info">
+                Портативность
+                <button className="info-delete">X</button>
+              </div>
+              <div className="info2">Камера</div>
+              <div className="info2">Ответ</div>
+              <div className="info2">Батарея</div>
             </div>
             <div className="hero__products">
               <div className="hero__product">
@@ -363,6 +365,10 @@ function Product() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div className="swaiper-group">
+              <SwaiperBlock />
+              <ProductsList />
             </div>
           </div>
         </div>
