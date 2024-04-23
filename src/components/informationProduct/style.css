@@ -190,7 +190,12 @@
 }
 .color {
   margin: 15px 0;
-  max-width: 100%;
+  /* max-width: 100%; */
+}
+.color-group {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 100%; */
 }
 .btns {
   display: flex;
@@ -301,6 +306,10 @@
   gap: 5px;
   padding-left: 15px;
 }
+/* .color-group {
+  display: flex;
+  flex-direction: column;
+} */
 .otzyv-title {
   font-weight: 500;
   font-size: 16px;
@@ -355,6 +364,9 @@
 @media screen and (max-width: 1200px) {
   .iphone-block {
     display: grid;
+  }
+  .swiper {
+    display: none;
   }
   .iphones-block {
     display: none;
@@ -415,7 +427,7 @@
   .product__block,
   .hgfds,
   /* .color, */
-  .btns,
+ 
   .otzyv-header {
     justify-content: center;
     align-items: center;
@@ -435,6 +447,14 @@
     grid-template-columns: 1fr;
     justify-content: center;
   }
+
+  .swiper {
+    display: block;
+  }
+  .color {
+    max-width: 405px;
+  }
+
   /* .opisanie {
     display: block;
   } */

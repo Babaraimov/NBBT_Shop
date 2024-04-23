@@ -19,7 +19,18 @@ import img16 from "../../assets/information/svg/Chart2.svg";
 import img17 from "../../assets/information/svg/next.svg";
 import img18 from "../../assets/information/svg/Invisible.svg";
 import img19 from "../../assets/information/svg/star-otzyv.svg";
+import ChartComponent from "./swaiperProduct";
+// import { useHistory } from "react-router-dom";
 function Information() {
+  // const history = useHistory();
+  const handleCompareClick = () => {};
+
+  const handleFavoriteClick = () => {};
+
+  // const handleImageClick = () => {
+  //   history.push("/other-page");
+  // };
+
   return (
     <>
       <section className="section">
@@ -29,7 +40,12 @@ function Information() {
               <div className="Products">
                 <div className="product__block">
                   <div className="iphone-block">
-                    <img className="iphone-13" src={img1} alt="" />
+                    <img
+                      className="iphone-13"
+                      src={img1}
+                      alt=""
+                      // onClick={handleImageClick}
+                    />
                     <div className="iphones-block">
                       <img className="iphones" src={img1} alt="" />
                       <img className="iphones" src={img1} alt="" />
@@ -181,17 +197,26 @@ function Information() {
                         </span>
                       </div>
                     </div>
-                    <img className="color" src={img6} alt="" />
-                    <img className="color" src={img7} alt="" />
-                    <img className="color" src={img8} alt="" />
-                    <div className="btns">
-                      <button className="btn-left">
-                        <img src={img9} alt="" /> Сравнить
-                      </button>
-                      <button className="btn-right">
-                        <img src={img10} alt="" /> В избранное
-                      </button>
+                    <div className="color-group">
+                      <img className="color" src={img6} alt="" />
+                      <img className="color" src={img7} alt="" />
+                      <img className="color" src={img8} alt="" />
+                      <div className="btns">
+                        <button
+                          className="btn-left"
+                          onClick={handleCompareClick}
+                        >
+                          <img src={img9} alt="" /> Сравнить
+                        </button>
+                        <button
+                          className="btn-right"
+                          onClick={handleFavoriteClick}
+                        >
+                          <img src={img10} alt="" /> В избранное
+                        </button>
+                      </div>
                     </div>
+
                     <div className="history-group">
                       <h4>История цены</h4>
                       <img className="mount" src={img11} alt="" />
@@ -205,6 +230,9 @@ function Information() {
                         <div className="mounth">Февраль</div>
                       </div>
                     </div>
+                    {/* <div className="swiper">
+                      <ChartComponent />
+                    </div> */}
                     <div className="chart-blocks">
                       {/* <div className="chart-groups"> */}
                       <div className="chart-block">
@@ -505,6 +533,9 @@ function Information() {
             <div className="btn-footer">
               <button className="button-footer">Показать еще</button>
             </div>
+          </div>
+          <div className="swiper">
+            <ChartComponent />
           </div>
         </div>
       </section>
