@@ -1,7 +1,13 @@
-import Header from "../../components/header/header";
+// import Header from "../../components/header/header";
+
+import Information from "../../components/informationProduct/information";
 
 function Home() {
-  return <div>Home</div>;
+  return (
+    <div>
+      <Information />
+    </div>
+  );
 }
 
 export default Home;

@@ -144,7 +144,7 @@
   color: #0f1113;
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width: 1240px) {
   .swaiper-group {
     display: none;
   }

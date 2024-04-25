@@ -125,54 +125,56 @@ function Information() {
                         447 Отзывов
                       </p>
                     </div>
-                    <div className="iphone__group-text">
-                      <p className="iphone-text">Дизайн</p>
-                      <div className="linia">
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div2"></div>
+                    <div className="iphone__info">
+                      <div className="iphone__group-text">
+                        <p className="iphone-text">Дизайн</p>
+                        <div className="linia">
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div2"></div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="iphone__group-text">
-                      <p className="iphone-text">Батарея</p>
-                      <div className="linia">
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div2"></div>
-                        <div className="div2"></div>
-                        <div className="div2"></div>
+                      <div className="iphone__group-text">
+                        <p className="iphone-text">Батарея</p>
+                        <div className="linia">
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div2"></div>
+                          <div className="div2"></div>
+                          <div className="div2"></div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="iphone__group-text">
-                      <p className="iphone-text">Камера</p>
-                      <div className="linia">
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
+                      <div className="iphone__group-text">
+                        <p className="iphone-text">Камера</p>
+                        <div className="linia">
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="iphone__group-text">
-                      <p className="iphone-text">Ответ</p>
-                      <div className="linia">
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
+                      <div className="iphone__group-text">
+                        <p className="iphone-text">Ответ</p>
+                        <div className="linia">
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="iphone__group-text">
-                      <p className="iphone-text">Портативность</p>
-                      <div className="linia">
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div1"></div>
-                        <div className="div2"></div>
+                      <div className="iphone__group-text">
+                        <p className="iphone-text">Портативность</p>
+                        <div className="linia">
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div1"></div>
+                          <div className="div2"></div>
+                        </div>
                       </div>
                     </div>
                     <div className="crown-group">
@@ -222,17 +224,17 @@ function Information() {
                       <img className="mount" src={img11} alt="" />
                       <img className="price" src={img12} alt="" />
                       <div className="history-mounth">
-                        <div className="mounth">Сентябрь</div>
-                        <div className="mounth">Октябрь</div>
-                        <div className="mounth">Ноябрь</div>
-                        <div className="mounth">Декабрь</div>
-                        <div className="mounth">Январь</div>
-                        <div className="mounth">Февраль</div>
+                        <p className="mounth">Сентябрь</p>
+                        <p className="mounth">Октябрь</p>
+                        <p className="mounth">Ноябрь</p>
+                        <p className="mounth">Декабрь</p>
+                        <p className="mounth">Январь</p>
+                        <p className="mounth">Февраль</p>
                       </div>
                     </div>
-                    {/* <div className="swiper">
+                    <div className="swaiper-block">
                       <ChartComponent />
-                    </div> */}
+                    </div>
                     <div className="chart-blocks">
                       {/* <div className="chart-groups"> */}
                       <div className="chart-block">
@@ -533,9 +535,6 @@ function Information() {
             <div className="btn-footer">
               <button className="button-footer">Показать еще</button>
             </div>
-          </div>
-          <div className="swiper">
-            <ChartComponent />
           </div>
         </div>
       </section>

@@ -33,7 +33,7 @@ const ChartBlock: React.FC<ChartBlockProps> = ({
   imgSrc,
 }) => {
   return (
-    <div className="chart-block">
+    <div className="chart-block2">
       <div className="chart-block-header">
         <p className="money-group-text">{moneyGroupText}</p>
         <img src={imgSrc} alt="" />
@@ -87,7 +87,6 @@ const ChartComponent: React.FC = () => {
           chartText: "Доставка бесплатная",
           imgSrc: img14,
         },
-        // Другие данные для слайда 1
       ],
     },
     {
@@ -97,7 +96,6 @@ const ChartComponent: React.FC = () => {
           chartText: "Доставка бесплатная",
           imgSrc: img13,
         },
-        // Другие данные для слайда 1
       ],
     },
     {
@@ -107,7 +105,24 @@ const ChartComponent: React.FC = () => {
           chartText: "Доставка бесплатная",
           imgSrc: img14,
         },
-        // Другие данные для слайда 1
+      ],
+    },
+    {
+      slideData: [
+        {
+          moneyGroupText: "83 999 ₽",
+          chartText: "Доставка бесплатная",
+          imgSrc: img13,
+        },
+      ],
+    },
+    {
+      slideData: [
+        {
+          moneyGroupText: "83 999 ₽",
+          chartText: "Доставка бесплатная",
+          imgSrc: img14,
+        },
       ],
     },
   ];

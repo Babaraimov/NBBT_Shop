@@ -107,6 +107,9 @@
   height: 4px;
   margin: 5px 5px 0 0;
 }
+.iphone__group {
+  max-width: 100%;
+}
 .charecteristic {
   border: 1px solid #f2f5f9;
   border-radius: 12px;
@@ -180,6 +183,7 @@
   /* align-items: center;
   justify-content: center; */
   flex-direction: column;
+  max-width: 400px;
 }
 .hgfds {
   display: flex;
@@ -253,6 +257,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  max-width: 100%;
+  align-items: center;
 }
 .chart-blocks {
   display: grid;
@@ -260,6 +266,13 @@
   gap: 20px;
 }
 .chart-block {
+  border: 1px solid #f2f5f9;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 345px;
+  background: #fff;
+}
+.chart-block2 {
   border: 1px solid #f2f5f9;
   border-radius: 12px;
   padding: 20px;
@@ -278,7 +291,7 @@
   color: #30d170;
   margin: 10px 0;
 }
-.mount img,
+.mount,
 .price {
   max-width: 100%;
 }
@@ -353,6 +366,9 @@
   max-width: 48px;
   height: 48px;
 }
+.swaiper-block {
+  max-width: 500px;
+}
 .otzyv__header-title {
   /* font-family: var(--font-family); */
   font-weight: 600;
@@ -361,31 +377,30 @@
   color: #0f1113;
   padding: 20px 0;
 }
+.iphone__info {
+  max-width: 100%;
+}
+@media screen and (max-width: 1240px) {
+  .swaiper-block {
+    display: none;
+  }
+}
 @media screen and (max-width: 1200px) {
   .iphone-block {
     display: grid;
   }
-  .swiper {
-    display: none;
-  }
   .iphones-block {
     display: none;
   }
-  .product__iphone {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+  .product__iphone,
   .history-group {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .chart-groups {
     display: flex;
-    overflow: hidden;
   }
-  /* .opisanie {
-    display: none;
-  } */
 }
 
 @media screen and (max-width: 1000px) {
@@ -401,15 +416,13 @@
     gap: 10px;
   }
   .chart-blocks {
-    display: flex;
-    overflow: hidden;
+    display: none;
   }
   .iphone-13,
   .opisanie,
   .charecteristic,
   .grade-block,
   .money-group,
-  .otzyv-groups,
   /* .chart-blocks, */
   .otzyv-header {
     max-width: 100%;
@@ -429,9 +442,11 @@
   /* .color, */
  
   .otzyv-header {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .information {
     flex-direction: column;
     align-items: center;
@@ -444,18 +459,29 @@
     max-width: 100%;
   }
   .otzyv-groups {
+    display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
+    align-items: center;
   }
 
-  .swiper {
-    display: block;
-  }
   .color {
     max-width: 405px;
+  }
+  .grade-block {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   /* .opisanie {
     display: block;
   } */
+}
+@media screen and (max-width: 1000px) {
+  .swaiper-block {
+    display: block;
+  }
+  .opisanie {
+    display: none;
+  }
 }
