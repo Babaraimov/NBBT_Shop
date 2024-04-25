@@ -49,14 +49,14 @@
 }
 
 /* @keyframes zemlaMove {
-  100% {
-    transform: translate(0px, 0px) rotate(-180deg);
+    100% {
+      transform: translate(0px, 0px) rotate(-180deg);
+    }
+    0% {
+      transform: translate(0px, 0px) rotate(-300deg);
+    }
   }
-  0% {
-    transform: translate(0px, 0px) rotate(-300deg);
-  }
-}
-
-.imgArrow.active {
-  animation: zemlaMove 1s;
-} */
+  
+  .imgArrow.active {
+    animation: zemlaMove 1s;
+  } */

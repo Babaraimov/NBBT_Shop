@@ -1,8 +1,8 @@
-import React, { useRef, useState } from "react";
-import arrow from "../../../assets/headerImg/Arrow - Down 3.svg";
-import arrowTop from "../../../assets/headerImg/Polygon 1 (1).svg";
-import vectorRigth from "../../../assets/headerImg/vectorRigth.svg";
-import "../../../components/dropDown.css/dropDown.css";
+import { useRef, useState } from "react";
+import arrow from "../../assets/headerImg/Arrow - Down 3.svg";
+import arrowTop from "../../assets/headerImg/Polygon 1 (1).svg";
+import vectorRigth from "../../assets/headerImg/vectorRigth.svg";
+import "./dropDown.css";
 
 interface Drop {
   defaultValue: string;

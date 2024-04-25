@@ -1,3 +1,4 @@
+import "./header.css";
 import behoof from "../../assets/headerImg/behoof_logo.svg";
 import heart from "../../assets/headerImg/heart.svg";
 import chart from "../../assets/headerImg/chart.svg";
@@ -6,8 +7,7 @@ import search from "../../assets/headerImg/search-normal.svg";
 import rigt from "../../assets/headerImg/Arrow - Right 2.svg";
 import imgIphone from "../../assets/headerImg/image 17.svg";
 import { NavLink } from "react-router-dom";
-import "./header.css";
-import DropDown from "../../store/slices/dropDownTsx/dropDown";
+import DropDown from "../dropDown/dropDown";
 
 function Header() {
   return (
