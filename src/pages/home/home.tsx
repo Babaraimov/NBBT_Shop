@@ -1,10 +1,10 @@
-import Header from "../../components/headers/header.tsx";
+import Header1 from "../../components/headers/header";
 
 function Home() {
   return (
-    <div>
-      <Header />
-    </div>
+    <>
+      <Header1 />
+    </>
   );
 }
 

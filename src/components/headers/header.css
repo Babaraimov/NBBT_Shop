@@ -6,9 +6,10 @@
 }
 .headerTop {
   display: flex;
-  align-items: center;
-  gap: 80px;
-  /* justify-content: space-between; */
+
+  /* align-items: center; */
+  /* gap: 80px; */
+  justify-content: space-between;
 }
 .headerRigth {
   display: flex;
@@ -72,7 +73,7 @@
   font-weight: 400;
   font-size: 17px;
   line-height: 250%;
-  width: 600px;
+  width: 400px;
   color: #a1abb9;
   background: #edeeef;
   border: none;
@@ -83,9 +84,6 @@
 .navBottom {
   display: flex;
   align-items: center;
-  gap: 20px;
-  /* justify-content: space-between; */
-  /* max-width: 150px; */
 }
 .hrtFrmCart {
   border-radius: 8px;
@@ -269,8 +267,4 @@
     right: 60px;
     /* height: 262px; */
   }
-}
-
-.btnnn {
-  margin: 800px 0px;
 }

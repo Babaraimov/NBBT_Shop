@@ -4,12 +4,11 @@ import heart from "../../assets/headerImg/heart.svg";
 import chart from "../../assets/headerImg/chart.svg";
 import frame from "../../assets/headerImg/frame.svg";
 import search from "../../assets/headerImg/search-normal.svg";
-import rigt from "../../assets/headerImg/Arrow - Right 2.svg";
-import imgIphone from "../../assets/headerImg/image 17.svg";
 import { NavLink } from "react-router-dom";
 import DropDown from "../dropDown/dropDown";
+import HeaderBottom from "./headerBottom";
 
-function Header() {
+function Header1() {
   return (
     <div>
       <div className="headers">
@@ -37,40 +36,21 @@ function Header() {
                     />
                   </form>
                 </div>
-                <NavLink className="navBottom" to="/">
-                  <img className="hrtFrmCart" src={heart} alt="" />
-                  <img className="hrtFrmCart" src={chart} alt="" />
-                  <img className="hrtFrmCart" src={frame} alt="" />
-                </NavLink>
+                <div className="navBottom">
+                  <NavLink to="/">
+                    <img className="hrtFrmCart" src={heart} alt="" />
+                    <img className="hrtFrmCart" src={chart} alt="" />
+                    <img className="hrtFrmCart" src={frame} alt="" />
+                  </NavLink>
+                </div>
               </div>
             </div>
-            <div className="headerBottom">
-              <div className="headerBottomLeft">
-                <h1 className="headerBtmInfo">
-                  <span>1.8 млн</span> товаров в <span>2272 магазинах</span>{" "}
-                  <br /> найди, сравни, выберай!
-                </h1>
-                <button className="headerBtmBtn">
-                  Перейти к качтегориям <img src={rigt} alt="" />
-                </button>
-              </div>
-              <div className="headerBottomRigth">
-                <h1 className="headerBtmInfo">
-                  <span>Топ-10</span> смартфонов <br />
-                  2023 года
-                </h1>
-                <button className="headerBtmBtnRigth">
-                  Смотреть <img src={rigt} alt="" />
-                </button>
-                <img className="headerBtmIphone" src={imgIphone} alt="" />
-              </div>
-            </div>
+            <HeaderBottom />
           </div>
         </div>
       </div>
-      <button className="btnnn"></button>
     </div>
   );
 }
 
-export default Header;
+export default Header1;

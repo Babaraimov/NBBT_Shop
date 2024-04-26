@@ -1,9 +1,9 @@
-import Header from "../../components/header/header";
+import Header1 from "../../components/headers/header";
 
 function Error() {
   return (
     <div>
-      <Header />
+      <Header1 />
       error
     </div>
   );
