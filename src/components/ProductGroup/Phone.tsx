@@ -3,6 +3,7 @@ import imgPhone from "./images/2272131 1 (12).png";
 import imgPhone1 from "./images/Frame 29.png";
 import imgPhone3 from "./images/Rating.png";
 import { SlArrowDown } from "react-icons/sl";
+import adaptationImg from "./images/Frame 1281.png";
 
 const Phone = () => {
   const phoneBoxItems = Array.from({ length: 10 }, (_, index) => (
@@ -27,7 +28,7 @@ const Phone = () => {
             </button>
           </div>
           <div className="phoneUl">
-            <ul>
+            <ul className="adaptationUl">
               <li className="phoneUl">
                 Dual Sim, 3G, 4G, 5G, VoLTE, Wi-Fi, NFC
               </li>
@@ -112,26 +113,56 @@ const Phone = () => {
   ));
 
   return (
-    <div className="phoneContainer">
-      {phoneBoxItems}
-      <div className="phoneFooterContainer">
-        <div className="phoneFooter">
-          <p>Показ 1 – 10 из 1286</p>
-        </div>
-        <div className="phoneFooterDiv">
-          <a href="">Назад</a>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>...</button>
-          <button>51</button>
-          <a href="">Вперед</a>
+    <>
+      <div className="phoneContainer">
+        {phoneBoxItems}
+        <div className="phoneFooterContainer">
+          <div className="phoneFooter">
+            <p>Показ 1 – 10 из 1286</p>
+          </div>
+          <div className="phoneFooterDiv">
+            <a href="">Назад</a>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>...</button>
+            <button>51</button>
+            <a href="">Вперед</a>
+          </div>
         </div>
       </div>
-    </div>
+      {[...Array(10)].map((_, index) => (
+        <div className="adaptationContainer" key={index}>
+          <div className="adaptationButton">
+            <button className="adaptation-button">4.4 средняя оценка</button>
+            <button className="adaptation-button-2">
+              4.0 <img src={adaptationImg} alt="" /> 447 Отзывов
+            </button>
+          </div>
+          <h2>Apple iPhone 13 Pro Max 256 ГБ серый</h2>
+          <h3>
+            78 999 ₽
+            <button>
+              <SlArrowDown />
+              13%
+            </button>
+          </h3>
+          <img className="phoneminiB-img" src={imgPhone1} alt="" />
+          <div className="adaptation_box">
+            <img className="adaptation_box_img" src={imgPhone} alt="" />
+            <ul className="UlAdaptation">
+              <li className="phoneUl">4 GB RAM, 128 GB inbuilt</li>
+              <li className="phoneUlli">Memory Card Not Supported</li>
+              <li className="phoneUl">3240 mAh Battery with Fast Charging</li>
+              <li className="phoneUl">iOS v15</li>
+            </ul>
+          </div>
+        </div>
+      ))}
+    </>
   );
 };
 

@@ -1,4 +1,9 @@
 import { LuChevronRight } from "react-icons/lu";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import { Product } from "./types";
 import NewImg1 from "./images/2272131 1.png";
 import NewImg2 from "./images/2272131 1 (2).png";
@@ -86,9 +91,25 @@ const MainProduct: React.FC = () => {
       name: "Apple iPhone 13 Pro Max 256 ГБ серый",
     },
   ];
-
   return (
     <>
+      <section className="new-container-swiper">
+        <div className="newText">
+          <b>Новинки</b>
+          <button>
+            К новинкам
+            <LuChevronRight />
+          </button>
+        </div>
+        <Swiper slidesPerView={1} spaceBetween={30} className="mySwiper">
+          {products.map((product, index) => (
+            <SwiperSlide key={index}>
+              <NewPart product={product} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
+
       <section className="new-container">
         <div className="newText">
           <b>Новинки</b>
@@ -99,7 +120,9 @@ const MainProduct: React.FC = () => {
         </div>
         <div className="NewContainer">
           {products.map((product, index) => (
-            <NewPart key={index} product={product} />
+            <div key={index}>
+              <NewPart product={product} />
+            </div>
           ))}
         </div>
       </section>
