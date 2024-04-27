@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import img1 from "../../assets/hero.imgs/1.svg";
 import img2 from "../../assets/hero.imgs/2.svg";
@@ -12,9 +12,19 @@ import "./style.css";
 // import img9 from "../../assets/hero.imgs/delete.svg";
 import img10 from "../../assets/hero.imgs/like.svg";
 import img11 from "../../assets/hero.imgs/static.svg";
+import img12 from "../../assets/hero.imgs/heart-solid.svg";
 import ProductsList from "./swaiperProduts";
 import SwaiperBlock from "./swaiperBlock";
 function Product() {
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [isLike, setLike] = useState(false);
+  const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite);
+  };
+  const handleLikeClick = () => {
+    setLike(!isLike);
+  };
+
   return (
     <>
       <section className="section">
@@ -82,10 +92,18 @@ function Product() {
                     </h1>
                   </div>
                   <div className="product__btns">
-                    <button>
-                      <img src={img10} alt="" />
+                    <button
+                      className="btn-right2"
+                      onClick={handleFavoriteClick}
+                    >
+                      <img
+                        src={isFavorite ? img12 : img10}
+                        alt=""
+                        className={isFavorite ? "heart-red" : "heart-white"}
+                      />
+                      ⠀
                     </button>
-                    <button>
+                    <button className="btn-left2">
                       <img src={img11} alt="" />
                     </button>
                   </div>
@@ -155,10 +173,18 @@ function Product() {
                     </h1>
                   </div>
                   <div className="product__btns">
-                    <button>
-                      <img src={img10} alt="" />
+                    <button
+                      className="btn-right2"
+                      onClick={handleFavoriteClick}
+                    >
+                      <img
+                        src={isFavorite ? img12 : img10}
+                        alt=""
+                        className={isFavorite ? "heart-red" : "heart-white"}
+                      />
+                      ⠀
                     </button>
-                    <button>
+                    <button className="btn-left2">
                       <img src={img11} alt="" />
                     </button>
                   </div>
@@ -228,10 +254,15 @@ function Product() {
                     </h1>
                   </div>
                   <div className="product__btns">
-                    <button>
-                      <img src={img10} alt="" />
+                    <button className="btn-right2" onClick={handleLikeClick}>
+                      <img
+                        src={isFavorite ? img12 : img10}
+                        alt=""
+                        className={isFavorite ? "heart-red" : "heart-white"}
+                      />
+                      ⠀
                     </button>
-                    <button>
+                    <button className="btn-left2">
                       <img src={img11} alt="" />
                     </button>
                   </div>
@@ -301,10 +332,18 @@ function Product() {
                     </h1>
                   </div>
                   <div className="product__btns">
-                    <button>
-                      <img src={img10} alt="" />
+                    <button
+                      className="btn-right2"
+                      onClick={handleFavoriteClick}
+                    >
+                      <img
+                        src={isFavorite ? img12 : img10}
+                        alt=""
+                        className={isFavorite ? "heart-red" : "heart-white"}
+                      />
+                      ⠀
                     </button>
-                    <button>
+                    <button className="btn-left2">
                       <img src={img11} alt="" />
                     </button>
                   </div>

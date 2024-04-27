@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import img1 from "../../assets/information/svg/1 .svg";
 import img2 from "../../assets/information/svg/Rating.svg";
@@ -19,13 +19,20 @@ import img16 from "../../assets/information/svg/Chart2.svg";
 import img17 from "../../assets/information/svg/next.svg";
 import img18 from "../../assets/information/svg/Invisible.svg";
 import img19 from "../../assets/information/svg/star-otzyv.svg";
+import img20 from "../../assets/information/svg/heart-red.svg";
 import ChartComponent from "./swaiperProduct";
 // import { useHistory } from "react-router-dom";
+
 function Information() {
+  const [isFavorite, setIsFavorite] = useState(false);
+
   // const history = useHistory();
   const handleCompareClick = () => {};
+  const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite); // Toggle the state
+  };
 
-  const handleFavoriteClick = () => {};
+  // const handleFavoriteClick = () => {};
 
   // const handleImageClick = () => {
   //   history.push("/other-page");
@@ -214,7 +221,12 @@ function Information() {
                           className="btn-right"
                           onClick={handleFavoriteClick}
                         >
-                          <img src={img10} alt="" /> В избранное
+                          <img
+                            className="heart-red"
+                            src={isFavorite ? img20 : img10}
+                            alt=""
+                          />{" "}
+                          В избранное
                         </button>
                       </div>
                     </div>

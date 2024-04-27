@@ -369,6 +369,9 @@
 .swaiper-block {
   max-width: 500px;
 }
+.heart-red {
+  max-width: 20px;
+}
 .otzyv__header-title {
   /* font-family: var(--font-family); */
   font-weight: 600;
