@@ -7,6 +7,7 @@ import MainProducts from "./pages/mainProducts/mainProducts";
 import Menu from "./pages/menu/menu";
 import Products from "./pages/products/products";
 import Search from "./pages/search/search";
+import MainProduct from "./components/hero/Hero";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   { path: "/Menu", element: <Menu /> },
   { path: "/Products", element: <Products /> },
   { path: "/Search", element: <Search /> },
+  { path: "/Hero", element: <MainProduct /> },
 ]);
 
 function App() {
