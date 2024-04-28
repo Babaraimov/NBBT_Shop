@@ -8,7 +8,7 @@
   padding: 0px 20px;
 }
 .btnMenu {
-  font-size: 24px;
+  padding: 12px 45px;
 }
 .menu__list {
   list-style-type: none;
@@ -39,11 +39,6 @@
   width: 9px;
   padding: 6px;
 }
-.imgArrowBottom {
-  /* width: 8px; */
-
-  /* padding: 7px 0px 7px 14px; */
-}
 .vectorRigth {
   width: 10px;
 }
@@ -60,3 +55,22 @@
   .imgArrow.active {
     animation: zemlaMove 1s;
   } */
+
+@media screen and (max-width: 1445px) {
+  .btnMenu {
+    padding: 12px 40px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .btnMenu {
+    padding: 7px 30px;
+    font-size: 10px;
+    position: relative;
+  }
+  .imgArrowBottom {
+    width: 12px;
+    position: absolute;
+    right: 7px;
+  }
+}

@@ -4,11 +4,11 @@ import arrowTop from "../../assets/headerImg/Polygon 1 (1).svg";
 import vectorRigth from "../../assets/headerImg/vectorRigth.svg";
 import "./dropDown.css";
 
-interface Drop {
-  defaultValue: string;
-}
+// interface Drop {
+//   defaultValue: string;
+// }
 
-const DropDown: React.FC<Drop> = ({ defaultValue }) => {
+const DropDown: React.FC = () => {
   const [isOpen, setOpen] = useState(false);
 
   const menus = [
@@ -44,7 +44,7 @@ const DropDown: React.FC<Drop> = ({ defaultValue }) => {
           className="btnMenu"
           onClick={() => setOpen(!isOpen)}
         >
-          {defaultValue}
+          Каталог товаров
           {isOpen ? (
             <img className="imgArrowTop" src={arrowTop} alt="" />
           ) : (

@@ -16,9 +16,11 @@ function Header1() {
           <div className="header">
             <div className="headerTopFixed">
               <div className="headerTop">
-                <div className="headerRigth">
+                <div className="headerLeft">
                   <NavLink className="behoofNav" to="/">
-                    <img className="imgBehoof" src={behoof} alt="" />
+                    <div className="divImgBehoof">
+                      <img className="imgBehoof" src={behoof} alt="" />
+                    </div>
                     <h1 className="behoof">Behoof</h1>
                   </NavLink>
                   <h5 className="miniInfo">
@@ -27,28 +29,32 @@ function Header1() {
                 </div>
                 <div className="headerCenter">
                   <form className="btnInpForm" action="">
-                    <DropDown defaultValue="Каталог товаров" />
-                    <img className="imgSeacrh" src={search} alt="" />
-                    <input
-                      className="inpSearch"
-                      type="text"
-                      placeholder="Поиск товаров"
-                    />
+                    <DropDown />
+                    <div className="imgInp">
+                      <img className="imgSeacrh" src={search} alt="" />
+                      <div className="maxWidth">
+                        <input
+                          className="inpSearch"
+                          type="text"
+                          placeholder="Поиск товаров"
+                        />
+                      </div>
+                    </div>
                   </form>
                 </div>
                 <div className="navBottom">
-                  <NavLink to="/">
-                    <img className="hrtFrmCart" src={heart} alt="" />
-                    <img className="hrtFrmCart" src={chart} alt="" />
-                    <img className="hrtFrmCart" src={frame} alt="" />
-                  </NavLink>
+                  <img className="hrtFrmCart" src={heart} alt="" />
+                  <img className="hrtFrmCart" src={chart} alt="" />
+                  <img className="hrtFrmCart" src={frame} alt="" />
                 </div>
+                <hr className="hr" />
               </div>
             </div>
             <HeaderBottom />
           </div>
         </div>
       </div>
+      <h1 className="tilek">tilek</h1>
     </div>
   );
 }
