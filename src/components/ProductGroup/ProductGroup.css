@@ -361,15 +361,6 @@
 }
 
 /*  */
-.hero__product {
-  border-radius: 0px 12px 12px 0px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  height: 300px;
-  margin-left: 10px;
-}
 
 .div1 {
   border-radius: 4px;

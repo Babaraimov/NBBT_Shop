@@ -1,5 +1,3 @@
-import React from "react";
-
 import img1 from "../../assets/hero.imgs/1.svg";
 import img2 from "../../assets/hero.imgs/2.svg";
 import img3 from "../../assets/hero.imgs/3.svg";
@@ -14,46 +12,51 @@ import img10 from "../../assets/hero.imgs/like.svg";
 import img11 from "../../assets/hero.imgs/static.svg";
 import ProductsList from "./swaiperProduts";
 import SwaiperBlock from "./swaiperBlock";
+import { useNavigate } from "react-router-dom";
 function Product() {
+  const nav = useNavigate();
   return (
     <>
       <section className="section">
         <div className="container">
+          <div className="swaiper-group">
+            <SwaiperBlock />
+          </div>
           <div className="hero">
             <h1 className="hero__title">Лучший выбор</h1>
             <div className="hero__block">
-              <div className="block">
+              <div onClick={() => nav("/MainProducts")} className="block">
                 <img src={img1} alt="" />
                 <p className="block__text">Смартфоны</p>
               </div>
-              <div className="block">
+              <div onClick={() => nav("/MainProducts")} className="block">
                 <img src={img2} alt="" />
                 <p className="block__text">Ноутбуки</p>
               </div>
-              <div className="block">
+              <div onClick={() => nav("/MainProducts")} className="block">
                 <img src={img3} alt="" />
                 <p className="block__text">Планшеты</p>
               </div>
-              <div className="block">
+              <div onClick={() => nav("/MainProducts")} className="block">
                 <img src={img4} alt="" />
                 <p className="block__text">Умные часы</p>
               </div>
-              <div className="block">
+              <div onClick={() => nav("/MainProducts")} className="block">
                 <img src={img5} alt="" />
                 <p className="block__text">Игровые приставки</p>
               </div>
-              <div className="block">
+              <div onClick={() => nav("/MainProducts")} className="block">
                 <img src={img6} alt="" />
                 <p className="block__text">Наушники</p>
               </div>
-              <div className="block">
+              <div onClick={() => nav("/MainProducts")} className="block">
                 <img src={img7} alt="" />
                 <p className="block__text">
                   Портативные <br />
                   колонки
                 </p>
               </div>
-              <div className="block">
+              <div onClick={() => nav("/MainProducts")} className="block">
                 <img src={img8} alt="" />
                 <p className="block__text">Аксесуары</p>
               </div>
@@ -368,7 +371,7 @@ function Product() {
             </div>
             <div className="swaiper-group">
               <SwaiperBlock />
-              <ProductsList />
+              {/* <ProductsList /> */}
             </div>
           </div>
         </div>

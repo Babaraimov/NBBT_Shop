@@ -6,6 +6,7 @@ import { RxSwitch } from "react-icons/rx";
 import { SlArrowRight } from "react-icons/sl";
 import imgProduct3 from "./images/arrow-3.png";
 import { HiAdjustments } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 
 function ProductGroup() {
   const [selectedOption, setSelectedOption] = useState("");
@@ -19,7 +20,9 @@ function ProductGroup() {
   return (
     <div id="containerGroup">
       <div className="textGroup">
-        <a style={{ color: "gray" }}>Главная /</a>
+        <NavLink to={"/"} style={{ color: "gray" }}>
+          Главная /
+        </NavLink>
         <span style={{ color: "black" }}> Смартфоны</span>
       </div>
       <div className="GroupText">

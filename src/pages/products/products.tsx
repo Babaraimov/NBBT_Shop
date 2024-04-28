@@ -1,5 +1,11 @@
+import Information from "../../components/informationProduct/information";
+
 function Products() {
-  return <div>Products</div>;
+  return (
+    <>
+      <Information />
+    </>
+  );
 }
 
 export default Products;

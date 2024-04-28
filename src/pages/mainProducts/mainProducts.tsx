@@ -1,5 +1,11 @@
+import ProductGroup from "../../components/ProductGroup/ProductGroup";
+
 function MainProducts() {
-  return <div>MainProducts</div>;
+  return (
+    <>
+      <ProductGroup />
+    </>
+  );
 }
 
 export default MainProducts;
