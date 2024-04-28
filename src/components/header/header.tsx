@@ -5,11 +5,12 @@ import frame from "../../assets/headerImg/frame.svg";
 import search from "../../assets/headerImg/search-normal.svg";
 import rigt from "../../assets/headerImg/Arrow - Right 2.svg";
 import imgIphone from "../../assets/headerImg/image 17.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import "./header.css";
 import DropDown from "../../store/slices/dropDownTsx/dropDown";
 
 function Header() {
+  const nav = useNavigate();
   return (
     <div>
       <div className="headers">
@@ -29,7 +30,12 @@ function Header() {
                 <div className="headerCenter">
                   <form className="btnInpForm" action="">
                     <DropDown defaultValue="Каталог товаров" />
-                    <img className="imgSeacrh" src={search} alt="" />
+                    <img
+                      onClick={() => nav("/search")}
+                      className="imgSeacrh"
+                      src={search}
+                      alt=""
+                    />
                     <input
                       className="inpSearch"
                       type="text"
@@ -37,11 +43,21 @@ function Header() {
                     />
                   </form>
                 </div>
-                <NavLink className="navBottom" to="/">
-                  <img className="hrtFrmCart" src={heart} alt="" />
-                  <img className="hrtFrmCart" src={chart} alt="" />
+                <div className="navBottom">
+                  <img
+                    onClick={() => nav("/ComparisonProducts")}
+                    className="hrtFrmCart"
+                    src={heart}
+                    alt=""
+                  />
+                  <img
+                    onClick={() => nav("/ComparisonProducts")}
+                    className="hrtFrmCart"
+                    src={chart}
+                    alt=""
+                  />
                   <img className="hrtFrmCart" src={frame} alt="" />
-                </NavLink>
+                </div>
               </div>
             </div>
             <div className="headerBottom">
@@ -68,7 +84,7 @@ function Header() {
           </div>
         </div>
       </div>
-      <button className="btnnn"></button>
+      {/* <button className="btnnn"></button> */}
     </div>
   );
 }
